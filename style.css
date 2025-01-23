@@ -40,3 +40,18 @@ body {
     background: transparent;
     cursor: pointer;
   }
+
+     /* Select the class controls and fa-play */
+     .controls .fa-play {
+        color: #28a745;
+      }
+   
+      /* Select the controls and fa-stop */
+      .controls .fa-stop {
+        color: #dc3545;
+      }
+
+      /* Select the controls and fa-pause (which we will create in JS */
+.controls .fa-pause {
+    color: #fff;
+  }
