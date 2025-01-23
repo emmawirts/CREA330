@@ -40,3 +40,17 @@ function stopVideo() {
 function updateProgress() {
   const percentage = (video.currentTime / video.duration) * 100;
   progress.value = percentage;
+
+  let minutes = Math.floor(video.currentTime / 60);
+  if (minutes < 10) minutes = '0' + String(minutes);
+
+  let seconds = Math.floor(video.currentTime % 60);
+  if (seconds < 10) seconds = '0' + String(seconds);
+
+  timestamp.innerHTML = `${minutes}:${seconds}`;
+}
+
+function setVideoProgress() {
+  const location = (progress.value * video.duration) / 100;
+  video.currentTime = location;
+}
