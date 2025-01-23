@@ -10,3 +10,7 @@ body {
     max-height: 100vh;
     margin: 0;
   }
+
+  h1 {
+    color: #fff;
+  }
