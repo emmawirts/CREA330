@@ -42,8 +42,10 @@ function stopVideo() {
 
 // Update the Progress and Timestamp
 function updateProgress() {
-  const percentage = (video.currentTime / video.duration) * 100;
-  progress.value = percentage;
+    console.log('time:', video.currentTime);
+     console.log('duration:', video.duration);
+    const percentage = (video.currentTime / video.duration) * 100;
+    progress.value = percentage;
 
   // Compute the minutes
   let minutes = Math.floor(video.currentTime / 60);
