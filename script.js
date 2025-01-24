@@ -56,7 +56,6 @@ function updateProgress() {
   if (seconds < 10) seconds = '0' + String(seconds);
 
   timestamp.innerHTML = `${minutes}:${seconds}`;
-}
 
 // Set Video Timestamp to Progress
 function setVideoProgress() {
@@ -66,4 +65,5 @@ function setVideoProgress() {
   video.currentTime = location;
 
   // The line above triggers a `timeupdate` event which will invoke the `updateProgress` function
+}
 }
